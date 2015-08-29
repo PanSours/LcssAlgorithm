@@ -1,0 +1,72 @@
+/**
+ * Icon & Logo styles
+ */
+#logo{
+   -fx-image: url("../icons/textlogo.jpg");
+   -fx-scale-x: 1.1;
+   -fx-scale-y: 1.1;
+}
+
+.vbox{
+  -fx-spacing : 0.8em;
+  -fx-alignment	: CENTER;
+  -fx-background-color: lightgray
+}
+
+.hbox{
+  -fx-spacing : 0.7em;
+  -fx-alignment	: CENTER;
+}
+
+.vbox VBox{
+  -fx-spacing : 0.7em;
+  -fx-alignment : CENTER;
+}
+
+.vbox HBox{
+  -fx-spacing : 1em;
+  -fx-alignment	: CENTER;
+}
+
+
+
+.hbox Button{
+   -fx-font : oblique bold 12pt sans-serif;
+   -fx-text-alignment : center;
+   -fx-alignment: CENTER;
+   -fx-background-size: auto;
+   -fx-background-repeat: no-repeat;
+   -fx-background-position:left;   
+}
+
+
+/**
+ * Button styles
+ */
+.defaultW{
+  -fx-background-color: 
+        #808080,
+        linear-gradient(to top, #9b9b9b, #f6f6f6);
+  -fx-text-fill: black;
+  -fx-effect: dropshadow(gaussian, #575757, 8.0, 0.4, 0.1, 0.1);
+}
+
+.defaultW:focused{
+    -fx-background-color: transparent, linear-gradient(to top, #9b9b9b, #f6f6f6);
+}
+
+.defaultW:hover{
+   -fx-background-color: 
+       #505050,
+       linear-gradient(#f2f2f2 10%, #ebebeb 40%, #dddddd 50%, #cfcfcf 100%);
+   -fx-text-fill: black;
+}
+
+.defaultW:pressed{
+   -fx-background-color:
+       transparent,
+       #707070,
+       linear-gradient(to bottom, #707070, #919191);
+   -fx-text-fill: black;
+   -fx-effect: dropshadow(gaussian, #575757, 7.0, 0.5, 0.1, 0.1)
+}

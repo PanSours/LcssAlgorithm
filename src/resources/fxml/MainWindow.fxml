@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="lcss.gui.MainWindowController"  xmlns:fx="http://javafx.com/fxml" 
+    styleClass="vbox" maxHeight="500">
+    
+    <stylesheets>
+        <URL value="@../css/mainWindowStylesheet.css" />
+    </stylesheets>
+ 
+  
+    <children>
+        
+       <ImageView fx:id="logo" />
+       
+       <HBox maxHeight="10" VBox.vgrow="ALWAYS" />
+       
+       <HBox fx:id="Selecters1" maxHeight="30" VBox.vgrow="ALWAYS" >
+           <Label layoutX="18.0" layoutY="15.0" style="-fx-font-size: 1.0em;" textFill="black" text="Select the First Dataset" />
+           <MenuBar fx:id="selecter1" >
+               <menus>
+                   <Menu fx:id="sel1" >
+                   </Menu>
+               </menus>
+           </MenuBar>
+           <Button styleClass="defaultW" fx:id="cancel1" text="Cancel" maxWidth="80" maxHeight="20"  HBox.hgrow="ALWAYS" onAction="#actionCancel" />
+       </HBox>
+
+       <HBox fx:id="Selecters2" maxHeight="30" VBox.vgrow="ALWAYS" >
+           <Label layoutX="18.0" layoutY="15.0" style="-fx-font-size: 1.0em;" textFill="black" text="Select the second Dataset " />
+           <MenuBar fx:id="selecter2">
+               <menus>
+                    <Menu fx:id="sel2" >
+                    </Menu>
+               </menus>
+           </MenuBar>
+           <Button styleClass="defaultW" fx:id="cancel2" text="Cancel" maxWidth="80" maxHeight="20"  HBox.hgrow="ALWAYS" onAction="#actionCancel" />
+       </HBox>
+        
+       <HBox fx:id="Area" maxHeight="200" VBox.vgrow="ALWAYS" >
+           <ScrollPane fx:id="scrollPane" prefHeight="20.0" prefWidth="400.0" />
+       </HBox>
+       
+       <HBox maxHeight="10" VBox.vgrow="ALWAYS" />
+       
+       <HBox fx:id="endButtons" maxHeight="30" VBox.vgrow="ALWAYS" >
+           <Button styleClass="defaultW" fx:id="procedure" text="Procedure" maxWidth="100" maxHeight="25"  HBox.hgrow="ALWAYS" onAction="#actionProcedure" />
+           <Button styleClass="defaultW" fx:id="maps" text="Google Maps" maxWidth="100" maxHeight="25"  HBox.hgrow="ALWAYS" onAction="#actionGoogleMaps" />
+       </HBox>
+    </children>   
+</VBox>
